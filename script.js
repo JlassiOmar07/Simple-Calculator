@@ -1,6 +1,7 @@
 const inputFieldEl = document.getElementById("result");
 const ButtonsEl = document.querySelectorAll("button");
 
+for (let i = 0; i < buttonsEl.length; i++) {
     ButtonsEl[i].addEventListener("click", function(){
         const buttonValue = ButtonsEl[i].textContent ;
         if(buttonValue === "C"){
@@ -15,7 +16,7 @@ const ButtonsEl = document.querySelectorAll("button");
 
        
     });
-
+}
 
 function clear (){
     inputFieldEl.value = "";
