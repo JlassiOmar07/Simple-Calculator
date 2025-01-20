@@ -1,7 +1,7 @@
 const inputFieldEl = document.getElementById("result");
 const ButtonsEl = document.querySelectorAll("button");
 
-for (let i = 0; i < buttonsEl.length; i++) {
+for (let i = 0; i < ButtonsEl.length; i++) {
     ButtonsEl[i].addEventListener("click", function(){
         const buttonValue = ButtonsEl[i].textContent ;
         if(buttonValue === "C"){
@@ -31,8 +31,10 @@ function deleteCarca(buttonValue){
 }
 
 function appendVAlue(buttonValue){
-    inputFieldEl.value += buttonValue ;
+    inputFieldEl.value = inputFieldEl.value + buttonValue ;
 }
+
+
 
 
 
